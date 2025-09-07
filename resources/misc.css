@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+    image-rendering: optimizespeed;
+    word-break: break-word;
+    color: white;
+    font-family: "VCR OSD Mono", sans-serif;
+    text-align: center;
+  }
+  
+  html {
+    scrollbar-width: none; 
+  }
+
+  @font-face {
+    font-family: "VCR OSD Mono";
+    src: url("VCR_OSD_MONO_1.001.woff2") format("woff2"),
+         url("VCR_OSD_MONO_1.001.ttf") format("truetype");
+  }
+  
+
+  ::-webkit-scrollbar {
+    display: none; 
+}
+
+  #particles-js {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;  
+  }
+
+  a {
+    background-image: linear-gradient(
+      to right,
+      #a8a8a8,
+      #a8a8a8 50%,
+      #636262 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  a:before{
+    content: '';
+    background: #636262;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  }
+  
+  .text-border {
+    width: 50vw;
+    border: 3px solid #ffffff; 
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff; 
+    border-radius: 10px;
+    text-align: left;
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: #1717178c;
+    line-height: 24px;
+  
+  }
+
+  @media (max-width: 768px) {
+
+  
+    .text-border, .frame-border {
+      width: 80vw;
+    }
+  
+
+  }
