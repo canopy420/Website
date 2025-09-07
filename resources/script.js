@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     const songs = [
-        { src: "media/music.mp3", title: "PLAYBOI CARTI- LONG TIME (INTRO)", marqueeText: "Just to feel like this it took a long time." },
+        { src: "media/music.mp3", title: "PLAYBOI CARTI - LONG TIME (INTRO)", marqueeText: "Just to feel like this it took a long time." },
         { src: "media/music2.mp3", title: "SUMMRS - BLOOD ALWAYS THICKER.", marqueeText: "Too fucked up in the head, so I need meds just to fall asleep." },
         { src: "media/music3.mp3", title: "LUCKI - 4 THE BETTA", marqueeText: "It's for the better, they brought me down, but it's for the better." }
     ];
